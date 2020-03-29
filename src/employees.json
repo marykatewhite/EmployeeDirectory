@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "name": "Steve Thomas",
+    "role": "Accounting",
+    "salary": "45000",
+    "office": "151"
+  },
+  {
+    "id": 2,
+    "name": "Mary Kate White",
+    "role": "Designer",
+    "salary": "60000",
+    "office": "152"
+  },
+  {
+    "id": 3,
+    "name": "Zach White",
+    "role": "Brother",
+    "salary": "40000",
+    "office": "153"
+  }
+]
+
+
