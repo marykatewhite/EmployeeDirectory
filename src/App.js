@@ -1,11 +1,9 @@
 import React, { Component } from "react";
 //  import './App.css';
+import employees from "./employees.json";
 import Navbar from "./components/Navbar.js";
 import Search from "./components/Search.js";
-import Main from "./components/Main.js";
 import Table from "./components/Table.js";
-import employees from "./employees.json";
-import EmployeeCard from "./components/EmployeeCard.js";
 
 class App extends Component {
   state = {
@@ -13,10 +11,10 @@ class App extends Component {
   };
 
   // removeFriend = id => {
-  // Filter this.state.friends for friends with an id not equal to the id being removed
-  // const friends = this.state.friends.filter(friend => friend.id !== id);
-  // Set this.state.friends equal to the new friends array
-  //   this.setState({ friends });
+  // //Filter this.state.friends for friends with an id not equal to the id being removed
+  // const employees = this.state.employees.filter(employee => employee.name !== props.name);
+  // //Set this.state.friends equal to the new friends array
+  //   this.setState({ employees });
   // };
 
   render() {
@@ -24,18 +22,7 @@ class App extends Component {
       <div className="App">
         <Navbar />
         <Search />
-        
-        {this.state.employees.map(employee => (
-          <EmployeeCard
-            id={employee.id}
-            key={employee.id}
-            name={employee.name}
-            role={employee.role}
-            salary={employee.salary}
-            office={employee.office}
-          />
-        ))}
-
+        <Table />
       </div>
     );
   }
