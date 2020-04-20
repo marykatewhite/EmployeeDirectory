@@ -7,6 +7,14 @@ class Table extends Component {
     super(props);
     this.state = { employees };
   }
+    
+  // filter by salary
+//   const poorEmployees = props.employees.filter(employee => employee.salary <= "50000");
+//   this.setState({poorEmployees});
+
+  // sort by salary
+
+
 
   renderTableHeader() {
     let header = Object.keys(this.state.employees[0]);

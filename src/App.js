@@ -2,7 +2,7 @@ import React, { Component } from "react";
 //  import './App.css';
 import employees from "./employees.json";
 import Navbar from "./components/Navbar.js";
-import Search from "./components/Search.js";
+import Sort from "./components/Sort.js";
 import Table from "./components/Table.js";
 
 class App extends Component {
@@ -10,10 +10,8 @@ class App extends Component {
     employees
   };
 
-  // removeFriend = id => {
-  // //Filter this.state.friends for friends with an id not equal to the id being removed
-  // const employees = this.state.employees.filter(employee => employee.name !== props.name);
-  // //Set this.state.friends equal to the new friends array
+  // poorEmployees = employees => {
+  // const employees = this.state.employees.filter(employee => employee.salary <= "50000");
   //   this.setState({ employees });
   // };
 
@@ -21,7 +19,7 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
-        <Search />
+        <Sort />
         <Table />
       </div>
     );

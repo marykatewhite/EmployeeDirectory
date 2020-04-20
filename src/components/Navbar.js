@@ -9,7 +9,8 @@ const styles = {
     textAlign: "center",
     justify: "center",
     margin: "10px",
-    marginBottom: "20px"
+    marginBottom: "20px",
+    paddingTop: "40px"
   },
   headerInfo: {
     fontSize: "30px",
