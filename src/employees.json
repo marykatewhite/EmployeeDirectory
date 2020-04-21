@@ -3,49 +3,49 @@
     "id": 1,
     "name": "Steve Thomas",
     "role": "Accounting",
-    "salary": "45000",
+    "salary": 45000,
     "office": "151"
   },
   {
     "id": 2,
     "name": "Mary Kate White",
     "role": "Designer",
-    "salary": "60000",
+    "salary": 60000,
     "office": "152"
   },
   {
     "id": 3,
     "name": "Zach White",
     "role": "Brother",
-    "salary": "40000",
+    "salary": 40000,
     "office": "153"
   },
   {
     "id": 4,
     "name": "Joe Noh",
     "role": "Chef",
-    "salary": "25000",
+    "salary": 25000,
     "office": "150"
   },
   {
     "id": 5,
     "name": "Rosy Wagoner",
     "role": "Therapist",
-    "salary": "70000",
+    "salary":70000,
     "office": "157"
   },
   {
     "id": 6,
     "name": "Ringus Wagoner",
     "role": "Hacker/Whacker",
-    "salary": "100000",
+    "salary": 100000,
     "office": "164"
   },
   {
     "id": 7,
     "name": "Hilary Brady",
     "role": "Model",
-    "salary": "72000",
+    "salary": 72000,
     "office": "159"
   }
 ]

@@ -21,7 +21,7 @@ class TableContainer extends Component {
     super(props);
     this.state = { employees };
     this.sortBySalary = this.sortBySalary.bind(this);
-    this.filterBySalary = this.sortBySalary.bind(this);
+    this.filterBySalary = this.filterBySalary.bind(this);
     this.renderTableData = this.renderTableData.bind(this);
     this.renderTableHeader = this.renderTableHeader.bind(this);
   }
@@ -49,16 +49,16 @@ class TableContainer extends Component {
   }
 
   sortBySalary() {
-    this.setState(prevState => {
-      this.state.employees.sort((a, b) => (a.salary - b.salary))
-  });
-  console.log(employees)
+    let prevState = [...this.state.employees];
+    prevState.sort((a, b) => (a.salary - b.salary));
+    this.setState({employees: [...prevState]});
   }
 
   filterBySalary() {
-    this.useState(prevState => {
-      this.state.employees.filter(employees => employees.salary <= "50000");
-    });
+console.log("filter")
+    let prevState = [...this.state.employees];
+    const array = prevState.filter(employees => employees.salary <= "50000");
+    this.setState({employees: [...array]});
   }
 
   render() {
