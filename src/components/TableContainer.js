@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import employees from "../employees.json";
+import { thisTypeAnnotation } from "@babel/types";
 // import Sort from "./Sort.js";
 // import Table from "./Table.js";
 
@@ -25,20 +26,6 @@ class TableContainer extends Component {
     this.renderTableHeader = this.renderTableHeader.bind(this);
   }
 
-
-  sortBySalary() {
-    this.setState(employees => {
-      this.state.employees.sort((a, b) => a.salary - b.salary);
-    });
-    console.log(employees)
-  }
-  filterBySalary() {
-      this.setState(prevState => {
-      this.state.employees.filter(employee => employee.salary <= "50000");
-    });
-  }
-
-
   renderTableHeader() {
     let header = Object.keys(this.state.employees[0]);
     return header.map((key, index) => {
@@ -58,6 +45,19 @@ class TableContainer extends Component {
           <td>{office}</td>
         </tr>
       );
+    });
+  }
+
+  sortBySalary() {
+    this.setState(prevState => {
+      this.state.employees.sort((a, b) => (a.salary - b.salary))
+  });
+  console.log(employees)
+  }
+
+  filterBySalary() {
+    this.useState(prevState => {
+      this.state.employees.filter(employees => employees.salary <= "50000");
     });
   }
 
