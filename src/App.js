@@ -2,8 +2,7 @@ import React, { Component } from "react";
 //  import './App.css';
 import employees from "./employees.json";
 import Navbar from "./components/Navbar.js";
-import Sort from "./components/Sort.js";
-import Table from "./components/Table.js";
+import TableContainer from "./components/TableContainer.js";
 
 class App extends Component {
   state = {
@@ -19,8 +18,7 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
-        <Sort />
-        <Table />
+        <TableContainer />
       </div>
     );
   }

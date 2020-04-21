@@ -25,7 +25,7 @@ function Navbar() {
     <nav style={styles.nav} className="nav navbar-nav navbar-center">
       <div className="nav-wrapper">
         <div style={styles.title}>Employee Directory</div>
-        <div style={styles.headerInfo}>Filter by salary or search.</div>
+        <div style={styles.headerInfo}>Sort by salary or filter.</div>
       </div>
     </nav>
   );

@@ -11,13 +11,16 @@ const styles = {
     margin: "20px"
   }
 };
+
+
+
 function Sort(props) {
   return (
     <div className="container center">
       <div className="row">
         <div className="col s12 m6 center">
           <div
-            id="filterBtn"
+            id="sortBtn"
             style={styles.sortBtn}
             className="waves-effect waves-light btn col s12 m10"
           >
